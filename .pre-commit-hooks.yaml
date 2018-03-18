@@ -1,0 +1,6 @@
+-   id: pretty-shell
+    name: pretty-shell
+    description: Make shell scripts pretty
+    entry: pre-commit/pretty-shell.sh
+    language: script
+    files: (\.sh|\.zsh\.ksh)$
