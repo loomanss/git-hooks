@@ -10,3 +10,9 @@
     entry: pre-commit/pretty-c.sh
     language: script
     files: (\.c|\.cpp|\.h|\.hpp)$
+-   id: tab-fixer
+    name: tab-fixer
+    description: Replace tabs with spaces
+    entry: pre-commit/tab-fixer.sh
+    language: script
+    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh\.ksh)$

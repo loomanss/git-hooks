@@ -18,3 +18,9 @@ repos:
         language: script
         files: (\.sh|\.zsh\.ksh)$
         exclude: tests
+    -   id: tab-fixer
+        name: tab-fixer
+        description: Replace tabs with spaces
+        entry: pre-commit/tab-fixer.sh
+        language: script
+        files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh\.ksh)$
