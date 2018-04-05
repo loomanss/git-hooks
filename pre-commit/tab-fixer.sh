@@ -2,18 +2,17 @@
 
 set -e
 
+script_dir="$( cd "$(dirname "$0")" ; pwd -P )"
+project_dir="$(dirname "${script_dir}")"
+
+# shellcheck source=/dev/null
+source "${project_dir}/shell-tools/common"
+
 default_spaces=8
 
-require_command() {
-    if [ ! "$(command -v "${1}")" ]; then
-        printf "%s %s\\n" "${1}" "required, but not installed"
-        exit 1
-    fi
-}
-
 check_depends() {
-    require_command expand
-    require_command sponge
+    st_require_command expand
+    st_require_command sponge
 }
 
 check_depends

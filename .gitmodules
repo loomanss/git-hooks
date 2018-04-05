@@ -1,0 +1,3 @@
+[submodule "shell-tools"]
+	path = shell-tools
+	url = https://github.com/jdswensen/shell-tools.git
