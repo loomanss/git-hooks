@@ -10,6 +10,12 @@
     entry: pre-commit/pretty-c.sh
     language: script
     files: (\.c|\.cpp|\.h|\.hpp)$
+-   id: windows-encoding-fixer
+    name: windows-encoding-fixer
+    description: Replace Windows encoded files with UTF-8 encoded files
+    entry: pre-commit/windows-encoding-fixer.sh
+    language: script
+    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh\.ksh)$
 -   id: tab-fixer
     name: tab-fixer
     description: Replace tabs with spaces
