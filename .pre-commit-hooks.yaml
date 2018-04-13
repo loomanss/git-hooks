@@ -3,7 +3,7 @@
     description: Make shell scripts pretty
     entry: pre-commit/pretty-shell.sh
     language: script
-    files: (\.sh|\.zsh\.ksh)$
+    files: (\.sh|\.zsh|\.ksh)$
 -   id: pretty-c
     name: pretty-c
     description: Make C source pretty
@@ -15,10 +15,10 @@
     description: Replace Windows encoded files with UTF-8 encoded files
     entry: pre-commit/windows-encoding-fixer.sh
     language: script
-    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh\.ksh)$
+    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh|\.ksh)$
 -   id: tab-fixer
     name: tab-fixer
     description: Replace tabs with spaces
     entry: pre-commit/tab-fixer.sh
     language: script
-    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh\.ksh)$
+    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh|\.ksh)$
