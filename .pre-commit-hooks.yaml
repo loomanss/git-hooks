@@ -15,10 +15,10 @@
     description: Replace Windows encoded files with UTF-8 encoded files
     entry: pre-commit/windows-encoding-fixer.sh
     language: script
-    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh|\.ksh)$
+    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh|\.ksh|\.yaml|.yml)$
 -   id: tab-fixer
     name: tab-fixer
     description: Replace tabs with spaces
     entry: pre-commit/tab-fixer.sh
     language: script
-    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh|\.ksh)$
+    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh|\.ksh|\.yaml|\.yml)$
