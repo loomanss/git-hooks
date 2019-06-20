@@ -1,24 +1,6 @@
--   id: pretty-shell
-    name: pretty-shell
+-   id: pretty-json
+    name: pretty-json
     description: Make shell scripts pretty
-    entry: pre-commit/pretty-shell.sh
+    entry: pre-commit/test1.py
     language: script
-    files: (\.sh|\.zsh|\.ksh)$
--   id: pretty-c
-    name: pretty-c
-    description: Make C source pretty
-    entry: pre-commit/pretty-c.sh
-    language: script
-    files: (\.c|\.cpp|\.h|\.hpp)$
--   id: windows-encoding-fixer
-    name: windows-encoding-fixer
-    description: Replace Windows encoded files with UTF-8 encoded files
-    entry: pre-commit/windows-encoding-fixer.sh
-    language: script
-    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh|\.ksh|\.yaml|.yml)$
--   id: tab-fixer
-    name: tab-fixer
-    description: Replace tabs with spaces
-    entry: pre-commit/tab-fixer.sh
-    language: script
-    files: (\.c|\.cpp|\.h|\.hpp|\.sh|\.zsh|\.ksh|\.yaml|\.yml)$
+    files: (\.json)$
